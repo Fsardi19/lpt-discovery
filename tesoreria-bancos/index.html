@@ -67,6 +67,7 @@
       <li><a href="#sec-i" data-target="sec-i">Reportes & Herramientas</a></li>
       <li><a href="#sec-j" data-target="sec-j">Coordinación</a></li>
       <li><a href="#sec-k" data-target="sec-k">Dolores Reales</a></li>
+      <li><a href="#sec-files" data-target="sec-files">Archivos & Hojas</a></li>
     </ol>
     <div class="progress-pill">
       <div><span class="pct" id="pctNum">0</span><span style="font-size:12px;color:var(--ink-mute)">%</span></div>
@@ -333,6 +334,23 @@
         <div class="q-text">¿Qué te <strong>preocupa</strong> que un sistema de IA pudiera hacer mal en tesorería?</div>
         <textarea class="tall" name="q30" placeholder="Esto es importante. Diseño los controles desde acá."></textarea>
       </div>
+    </section>
+
+    <!-- ===== ARCHIVOS ===== -->
+    <section class="q-section" id="sec-files">
+      <div class="sec-head">
+        <div class="sec-letter">L</div>
+        <h2>Archivos y Hojas de Cálculo</h2>
+        <div class="sub">Lista los archivos importantes de tesorería: posición de caja diaria, control de pagos, planillas de cobranza, conciliaciones, FX, etc.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-num">CÓMO LLENAR</div>
+        <div class="q-text">Click en <strong>"+ Agregar archivo"</strong> y llena los datos de cada archivo. Para cada uno lo crítico: <strong>nombre, ubicación y descripción</strong>.</div>
+      </div>
+
+      <div id="filesList"></div>
+      <button type="button" class="btn-add-file" id="btnAddFile">+ Agregar archivo</button>
     </section>
 
     <!-- SIGNATURE -->

@@ -186,6 +186,135 @@
     }
   });
 
+  // ---------- ARCHIVOS DINÁMICOS ----------
+  const filesList = document.getElementById('filesList');
+  const btnAddFile = document.getElementById('btnAddFile');
+  let fileCounter = 0;
+
+  function renderFileEntry(idx) {
+    const n = String(idx).padStart(2, '0');
+    const div = document.createElement('div');
+    div.className = 'file-entry';
+    div.dataset.idx = idx;
+    div.innerHTML = `
+      <div class="entry-num">ARCHIVO ${n}</div>
+      <div class="file-grid">
+        <div>
+          <label>Nombre del archivo</label>
+          <input type="text" name="file_${idx}_nombre" placeholder="Ej: Inventario_Cafe_Verde_2026.xlsx" />
+        </div>
+        <div>
+          <label>Tipo</label>
+          <select name="file_${idx}_tipo">
+            <option value="">—</option>
+            <option value="Excel">Excel / Sheets</option>
+            <option value="Word">Word / Docs</option>
+            <option value="PDF">PDF</option>
+            <option value="Notion">Notion</option>
+            <option value="App propia">App / sistema</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <label>Dónde vive</label>
+          <select name="file_${idx}_ubicacion">
+            <option value="">—</option>
+            <option value="Drive compartido">Drive compartido</option>
+            <option value="Mi Drive">Mi Drive</option>
+            <option value="OneDrive">OneDrive</option>
+            <option value="Local en mi PC">Local en mi PC</option>
+            <option value="Servidor de red">Servidor de red</option>
+            <option value="Email adjunto">Email (adjunto)</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <label>Frecuencia de uso</label>
+          <select name="file_${idx}_frecuencia">
+            <option value="">—</option>
+            <option value="Diario">Diario</option>
+            <option value="Semanal">Semanal</option>
+            <option value="Quincenal">Quincenal</option>
+            <option value="Mensual">Mensual</option>
+            <option value="Trimestral">Trimestral</option>
+            <option value="Eventual">Eventual / sólo cuando se pide</option>
+          </select>
+        </div>
+        <div>
+          <label>Quién lo usa</label>
+          <input type="text" name="file_${idx}_usuarios" placeholder="Tú, todo el equipo, gerencia, etc." />
+        </div>
+        <div>
+          <label>Quién lo actualiza</label>
+          <input type="text" name="file_${idx}_actualiza" placeholder="Nombre o rol." />
+        </div>
+      </div>
+      <div class="entry-row">
+        <label>¿Para qué sirve y cómo está estructurado?</label>
+        <textarea name="file_${idx}_descripcion" placeholder="Ej: Lleva el kardex de café verde por lote. Una pestaña por mes. Columnas: lote, fecha entrada, kg, destino. Lo actualizo manualmente cada vez que sale un saco."></textarea>
+      </div>
+      <div class="entry-row">
+        <label>Link directo (opcional, si lo puedes compartir)</label>
+        <input type="text" name="file_${idx}_link" placeholder="URL de Drive / OneDrive si está disponible." />
+      </div>
+      <button type="button" class="btn-remove-file" data-idx="${idx}">× Eliminar este archivo</button>
+    `;
+    filesList?.appendChild(div);
+    refreshFilesEmpty();
+  }
+
+  function refreshFilesEmpty() {
+    if (!filesList) return;
+    const empty = filesList.querySelector('.files-empty');
+    const hasEntries = filesList.querySelectorAll('.file-entry').length > 0;
+    if (hasEntries && empty) empty.remove();
+    if (!hasEntries && !empty) {
+      const e = document.createElement('div');
+      e.className = 'files-empty';
+      e.textContent = 'Aún no hay archivos listados. Click en "+ Agregar archivo" para empezar.';
+      filesList.appendChild(e);
+    }
+  }
+
+  if (filesList) refreshFilesEmpty();
+
+  btnAddFile?.addEventListener('click', () => {
+    fileCounter++;
+    renderFileEntry(fileCounter);
+    save();
+  });
+
+  filesList?.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-remove-file');
+    if (!btn) return;
+    if (!confirm('¿Eliminar este archivo de la lista?')) return;
+    btn.closest('.file-entry')?.remove();
+    refreshFilesEmpty();
+    save();
+  });
+
+  // Restaurar entradas guardadas (lee localStorage para detectar el max idx)
+  function restoreFiles() {
+    if (!filesList) return;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      const idxs = new Set();
+      Object.keys(data).forEach(k => {
+        const m = k.match(/^file_(\d+)_/);
+        if (m) idxs.add(parseInt(m[1], 10));
+      });
+      const sorted = Array.from(idxs).sort((a, b) => a - b);
+      sorted.forEach(idx => {
+        renderFileEntry(idx);
+        if (idx > fileCounter) fileCounter = idx;
+      });
+    } catch (e) { console.error(e); }
+  }
+
+  restoreFiles();
+
   // ---------- INIT ----------
   form.addEventListener('input', save);
   form.addEventListener('change', save);

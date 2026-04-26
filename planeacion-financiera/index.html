@@ -65,6 +65,7 @@
       <li><a href="#sec-h" data-target="sec-h">Coordinación</a></li>
       <li><a href="#sec-i" data-target="sec-i">Herramientas & Datos</a></li>
       <li><a href="#sec-j" data-target="sec-j">Dolores Reales</a></li>
+      <li><a href="#sec-files" data-target="sec-files">Archivos & Hojas</a></li>
     </ol>
     <div class="progress-pill">
       <div><span class="pct" id="pctNum">0</span><span style="font-size:12px;color:var(--ink-mute)">%</span></div>
@@ -322,6 +323,23 @@
         <div class="q-text">¿Qué te <strong>preocupa</strong> que un sistema con IA pudiera hacer mal en planeación?</div>
         <textarea name="q30"></textarea>
       </div>
+    </section>
+
+    <!-- ===== ARCHIVOS ===== -->
+    <section class="q-section" id="sec-files">
+      <div class="sec-head">
+        <div class="sec-letter">K</div>
+        <h2>Archivos y Hojas de Cálculo</h2>
+        <div class="sub">Esta es probablemente el área con más archivos críticos: modelos financieros, dashboards, presupuestos, sensibilidades, escenarios. Listen los más importantes (~10–15) — el resto lo hablamos después.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-num">CÓMO LLENAR</div>
+        <div class="q-text">Click en <strong>"+ Agregar archivo"</strong> y llena los datos de cada archivo. Para cada uno lo crítico: <strong>nombre, ubicación y descripción</strong>. Si tu modelo principal es Excel, descríbelo a fondo (pestañas, drivers, supuestos).</div>
+      </div>
+
+      <div id="filesList"></div>
+      <button type="button" class="btn-add-file" id="btnAddFile">+ Agregar archivo</button>
     </section>
 
     <!-- SIGNATURE -->
