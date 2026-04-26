@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="discovery-area" content="contable" />
+<meta name="discovery-recipient" content="Martica + Equipo LP&T" />
+<title>Discovery Contable · La Palma & El Tucán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css" />
+<script src="../assets/config.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand-mark">La Palma &amp; El Tucán · Discovery Contable</div>
+    <h1>Antes de construir,<br><em>queremos entender.</em></h1>
+    <p class="lede">Estamos diseñando un sistema de asistencia ejecutiva con IA. Antes de tocar nada, necesitamos mapear cómo trabajan ustedes hoy — para construir algo que les quite trabajo, no que se los duplique.</p>
+
+    <div class="meta-row">
+      <div><span class="k">De</span><span class="v">Felipe Sardi</span></div>
+      <div><span class="k">Para</span><span class="v">Martica + Equipo Contable LP&amp;T</span></div>
+      <div><span class="k">Plazo</span><span class="v">5 días hábiles</span></div>
+      <div><span class="k">Tiempo estimado</span><span class="v">45–60 min</span></div>
+      <div><span class="k">Confidencialidad</span><span class="v">Interno · No compartir</span></div>
+    </div>
+
+    <div class="video-block">
+      <div class="video-label">Mensaje de Felipe</div>
+      <div class="video-frame">
+        <div class="video-placeholder">
+          <div class="ico">▶</div>
+          <div>Aquí va el video. Reemplaza el placeholder con un &lt;iframe src="https://www.loom.com/embed/XXX"&gt;.</div>
+        </div>
+      </div>
+      <div class="video-note">Recomendado verlo antes de empezar a responder.</div>
+    </div>
+  </div>
+</header>
+
+<div class="intro">
+  <div class="intro-block">
+    <h2>Cómo responder bien este formulario</h2>
+    <ul>
+      <li><strong>No es auditoría.</strong> Es un mapa para construir mejor. Si algo está mal hoy, decirlo ayuda.</li>
+      <li><strong>Sean específicos.</strong> "Depende" es válido, pero cuéntennos de qué depende.</li>
+      <li><strong>Si una pregunta no aplica</strong>, escriban N/A y sigan.</li>
+      <li><strong>Capturas de pantalla:</strong> si quieren ilustrar (interfaz del sistema contable, formato de un reporte, etc.), súbanlas a la carpeta de Drive (<a id="driveFolderLink" href="#" style="color:var(--ink-mute)">se les compartirá link</a>) y mencionen el archivo en la respuesta.</li>
+      <li><strong>El formulario se guarda solo</strong> en este navegador. Pueden cerrar y volver mañana sin perder nada.</li>
+      <li><strong>Al final</strong> hay botones para descargar PDF/JSON o enviar directo a Felipe.</li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <nav class="toc" id="toc">
+    <div class="toc-title">Secciones</div>
+    <ol>
+      <li><a href="#sec-a" data-target="sec-a">Facturación CxP</a></li>
+      <li><a href="#sec-b" data-target="sec-b">Cobranza CxC</a></li>
+      <li><a href="#sec-c" data-target="sec-c">Sistema Contable</a></li>
+      <li><a href="#sec-d" data-target="sec-d">Conciliación</a></li>
+      <li><a href="#sec-e" data-target="sec-e">Cierre Mensual</a></li>
+      <li><a href="#sec-f" data-target="sec-f">Intercompañías</a></li>
+      <li><a href="#sec-g" data-target="sec-g">Cash Flow</a></li>
+      <li><a href="#sec-h" data-target="sec-h">Reporting</a></li>
+      <li><a href="#sec-i" data-target="sec-i">Equipo</a></li>
+      <li><a href="#sec-j" data-target="sec-j">Regulatorio</a></li>
+      <li><a href="#sec-k" data-target="sec-k">Dolores Reales</a></li>
+    </ol>
+    <div class="progress-pill">
+      <div><span class="pct" id="pctNum">0</span><span style="font-size:12px;color:var(--ink-mute)">%</span></div>
+      <div style="margin-top:4px;font-size:11px">Avance del formulario</div>
+      <div class="pbar"><div id="pbarFill"></div></div>
+    </div>
+  </nav>
+
+  <form id="discoveryForm" autocomplete="off">
+
+    <!-- ===== A ===== -->
+    <section class="q-section" id="sec-a">
+      <div class="sec-head">
+        <div class="sec-letter">A</div>
+        <h2>Ciclo de Facturación · Proveedores (CxP)</h2>
+        <div class="sub">Cómo entran las facturas, quién las procesa y cuánto tarda.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 01</div>
+        <div class="q-text">¿Cuántas facturas de proveedores procesan en promedio al mes?</div>
+        <input type="text" name="q01" placeholder="Ej: 120 facturas/mes" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 02</div>
+        <div class="q-text">¿Cómo llegan las facturas?</div>
+        <div class="q-help">Marcar todo lo que aplique.</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q02" value="Papel físico" /> Papel físico</label>
+          <label class="opt"><input type="checkbox" name="q02" value="PDF por email" /> PDF por email</label>
+          <label class="opt"><input type="checkbox" name="q02" value="Plataforma DIAN" /> Plataforma DIAN</label>
+          <label class="opt"><input type="checkbox" name="q02" value="WhatsApp" /> WhatsApp</label>
+          <label class="opt"><input type="checkbox" name="q02" value="Otro" /> Otro</label>
+        </div>
+        <textarea name="q02_otro" placeholder="Si marcaron 'Otro', especifiquen…" style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 03</div>
+        <div class="q-text">¿Quién las recibe primero y cómo se distribuyen al equipo?</div>
+        <textarea name="q03" placeholder="Ej: Las recibe María en facturacion@... y reenvía según sea finca, oficina o exportación."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 04</div>
+        <div class="q-text">¿Cuántos días en promedio entre que llega una factura y queda registrada en el sistema contable?</div>
+        <input type="text" name="q04" placeholder="Ej: 3 días hábiles" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 05</div>
+        <div class="q-text">¿Hay un flujo de aprobación antes de pagar? ¿Quién aprueba qué montos?</div>
+        <textarea name="q05" placeholder="Describan el flujo: quién aprueba hasta X, quién por encima, qué firma se necesita…"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 06</div>
+        <div class="q-text">¿Dónde se archivan los soportes (PDFs, fotos, físicos)?</div>
+        <textarea name="q06" placeholder="Ej: PDFs en Google Drive carpeta X, físicos en archivador, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 07</div>
+        <div class="q-text">¿Cuál es la política de plazos de pago a proveedores?</div>
+        <textarea name="q07" placeholder="Ej: 30 días para insumos, contado para servicios pequeños, etc."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== B ===== -->
+    <section class="q-section" id="sec-b">
+      <div class="sec-head">
+        <div class="sec-letter">B</div>
+        <h2>Ciclo de Cobranza · Clientes (CxC)</h2>
+        <div class="sub">Cómo facturamos, cómo cobramos, cuánto tardan en pagarnos.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 08</div>
+        <div class="q-text">¿Cuántas facturas emiten al mes? ¿A cuántos clientes únicos?</div>
+        <input type="text" name="q08" placeholder="Ej: 80 facturas/mes a 25 clientes únicos" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 09</div>
+        <div class="q-text">¿Quién emite las facturas y desde dónde?</div>
+        <textarea name="q09" placeholder="Persona, software, plantilla, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 10</div>
+        <div class="q-text">¿Hacen facturación electrónica DIAN? ¿Con qué proveedor tecnológico?</div>
+        <textarea name="q10" placeholder="Ej: Sí, con Siigo / Alegra / The Factory HKA / etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 11</div>
+        <div class="q-text">¿Cómo gestionan los cobros vencidos hoy?</div>
+        <textarea name="q11" placeholder="Llamada, email, recordatorio manual, escalamiento…"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 12</div>
+        <div class="q-text">¿Tienen política escrita de cartera?</div>
+        <div class="q-help">Días de plazo, intereses de mora, descuentos pronto pago, etc.</div>
+        <textarea name="q12"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 13</div>
+        <div class="q-text">¿Cuál es el DSO promedio (días de cobro)?</div>
+        <input type="text" name="q13" placeholder="Ej: 45 días" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 14</div>
+        <div class="q-text">¿Hay clientes problemáticos que requieren tratamiento especial?</div>
+        <textarea name="q14" placeholder="Sin nombrarlos públicamente si son sensibles — describan el patrón."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== C ===== -->
+    <section class="q-section" id="sec-c">
+      <div class="sec-head">
+        <div class="sec-letter">C</div>
+        <h2>Sistema Contable Actual</h2>
+        <div class="sub">La sección más importante para el equipo de IA. Si no saben algo, "no sé" está perfecto.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 15</div>
+        <div class="q-text">¿Qué <strong>software contable</strong> usan hoy?</div>
+        <div class="q-help">Marquen el que aplique. Si usan más de uno, marquen todos.</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q15_software" value="AgroWin" /> AgroWin</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="Siigo" /> Siigo</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="Alegra" /> Alegra</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="World Office" /> World Office</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="Helisa" /> Helisa</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="SAP" /> SAP</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="QuickBooks" /> QuickBooks</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="Excel" /> Excel</label>
+          <label class="opt"><input type="checkbox" name="q15_software" value="Otro" /> Otro</label>
+        </div>
+        <input type="text" name="q15" placeholder="Versión exacta y, si marcaron 'Otro', cuál es. Ej: AgroWin Profesional v23.4." style="margin-top:10px" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 16</div>
+        <div class="q-text">¿Es instalación local en un PC, en red interna, o cloud?</div>
+        <div class="opt-group">
+          <label class="opt"><input type="radio" name="q16" value="Local en un PC" /> Local en un solo PC</label>
+          <label class="opt"><input type="radio" name="q16" value="Red interna" /> En red interna (varios PCs lo usan)</label>
+          <label class="opt"><input type="radio" name="q16" value="Cloud" /> Cloud / acceso remoto</label>
+          <label class="opt"><input type="radio" name="q16" value="No sé" /> No estoy seguro</label>
+        </div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 17</div>
+        <div class="q-text">¿En qué máquina(s) está instalado? ¿Quién es el "DBA de facto"?</div>
+        <textarea name="q17" placeholder="Ej: PC de María en oficina central; el técnico externo Juan Pérez es quien lo mantiene."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 18</div>
+        <div class="q-text">¿Tiene módulo de exportación a Excel/CSV?</div>
+        <div class="q-help">¿Cuáles reportes se pueden exportar? Si quieren ilustrar, suban una captura a la carpeta Drive.</div>
+        <textarea name="q18"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 19</div>
+        <div class="q-text">¿Saben si el sistema contable tiene <strong>API, webhooks o conector externo</strong>?</div>
+        <textarea name="q19" placeholder="Si no saben, escriban 'no sé' — preguntaremos al proveedor."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 20</div>
+        <div class="q-text">¿Quién les da <strong>soporte técnico</strong> del sistema contable?</div>
+        <textarea name="q20" placeholder="Nombre del consultor / empresa, frecuencia, contrato vigente o ad-hoc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 21</div>
+        <div class="q-text">¿Cuándo y cómo se hacen los backups? ¿Dónde se guardan?</div>
+        <textarea name="q21" placeholder="Ej: Backup diario automático a USB / Drive / servidor X."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 22</div>
+        <div class="q-text">¿Han tenido pérdida de información alguna vez? ¿Cómo se resolvió?</div>
+        <textarea name="q22"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 23</div>
+        <div class="q-text">¿Saben qué <strong>tipo de base de datos</strong> usa el sistema?</div>
+        <div class="q-help">Firebird, SQL Server, MySQL, PostgreSQL, propietaria, otra. Si no saben, "no sé" está perfecto.</div>
+        <input type="text" name="q23" />
+      </div>
+    </section>
+
+    <!-- ===== D ===== -->
+    <section class="q-section" id="sec-d">
+      <div class="sec-head">
+        <div class="sec-letter">D</div>
+        <h2>Conciliación Bancaria</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 24</div>
+        <div class="q-text">¿Con cuántos bancos operan? Mencionen tipo de cuenta (corriente, ahorros, USD).</div>
+        <textarea name="q24" placeholder="Ej: Bancolombia (corriente COP), Davivienda (ahorros COP), Banco Itaú (USD)."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 25</div>
+        <div class="q-text">¿Cómo cargan los movimientos al sistema?</div>
+        <div class="opt-group">
+          <label class="opt"><input type="radio" name="q25" value="Manual" /> Manual, transacción por transacción</label>
+          <label class="opt"><input type="radio" name="q25" value="Cargue masivo" /> Cargue masivo (CSV/Excel desde extracto)</label>
+          <label class="opt"><input type="radio" name="q25" value="API banco" /> API del banco</label>
+          <label class="opt"><input type="radio" name="q25" value="Otro" /> Otro</label>
+        </div>
+        <textarea name="q25_detalle" placeholder="Detalles adicionales o aclaraciones." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 26</div>
+        <div class="q-text">¿Cada cuánto concilian?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="radio" name="q26" value="Diario" /> Diario</label>
+          <label class="opt"><input type="radio" name="q26" value="Semanal" /> Semanal</label>
+          <label class="opt"><input type="radio" name="q26" value="Quincenal" /> Quincenal</label>
+          <label class="opt"><input type="radio" name="q26" value="Mensual" /> Mensual</label>
+        </div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 27</div>
+        <div class="q-text">¿Cuántas horas al mes se van en conciliación?</div>
+        <input type="text" name="q27" placeholder="Ej: 18 horas/mes" />
+      </div>
+    </section>
+
+    <!-- ===== E ===== -->
+    <section class="q-section" id="sec-e">
+      <div class="sec-head">
+        <div class="sec-letter">E</div>
+        <h2>Cierre Mensual</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 28</div>
+        <div class="q-text">¿Cuántos días hábiles toma el cierre mensual hoy?</div>
+        <input type="text" name="q28" placeholder="Ej: 8 días hábiles" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 29</div>
+        <div class="q-text">¿Cuáles son los pasos del cierre, en orden?</div>
+        <textarea class="tall" name="q29" placeholder="Liste los pasos secuencialmente: 1) ... 2) ... 3) ..."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 30</div>
+        <div class="q-text">¿Cuál paso del cierre es <strong>el cuello de botella</strong>?</div>
+        <textarea name="q30" placeholder="El que siempre los traba."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 31</div>
+        <div class="q-text">¿Qué reportes salen del cierre y a quién se entregan?</div>
+        <textarea name="q31"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 32</div>
+        <div class="q-text">¿Qué errores son los más frecuentes y cuánto cuesta corregirlos?</div>
+        <textarea name="q32" placeholder="Sean francos. Esto es lo que más vamos a poder ayudar."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== F ===== -->
+    <section class="q-section" id="sec-f">
+      <div class="sec-head">
+        <div class="sec-letter">F</div>
+        <h2>Intercompañías · Coffee Hub / Green Hub / La Palma & El Tucán</h2>
+        <div class="sub">Esto es crítico — es donde más errores acumulamos históricamente.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 33</div>
+        <div class="q-text">¿Cómo registran las operaciones intercompañía hoy?</div>
+        <div class="q-help">Préstamos, ventas de servicios, fees de management, reembolsos.</div>
+        <textarea class="tall" name="q33"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 34</div>
+        <div class="q-text">¿Quién calcula los intereses (12% E.A. u otro) y cada cuánto?</div>
+        <textarea name="q34"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 35</div>
+        <div class="q-text">¿Hay matriz de saldos intercompañía actualizada? ¿Quién la mantiene?</div>
+        <textarea name="q35"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 36</div>
+        <div class="q-text">¿Cómo concilian saldos al cierre entre las 3 empresas?</div>
+        <textarea name="q36"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 37</div>
+        <div class="q-text">¿Hay diferencias recurrentes? ¿Por qué se generan?</div>
+        <textarea name="q37" placeholder="Tipo de cambio, timing, partidas en tránsito, errores de codificación, etc."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== G ===== -->
+    <section class="q-section" id="sec-g">
+      <div class="sec-head">
+        <div class="sec-letter">G</div>
+        <h2>Cash Flow & Proyecciones</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 38</div>
+        <div class="q-text">¿Existe una proyección de caja semanal o mensual hoy?</div>
+        <textarea name="q38" placeholder="Sí/No, alcance, herramienta."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 39</div>
+        <div class="q-text">¿Quién la prepara, en qué herramienta y cada cuánto se actualiza?</div>
+        <textarea name="q39"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 40</div>
+        <div class="q-text">¿Comparan presupuesto vs ejecución real? ¿Con qué frecuencia?</div>
+        <textarea name="q40"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 41</div>
+        <div class="q-text">¿Cuándo se construye el presupuesto anual? ¿Quiénes participan?</div>
+        <textarea name="q41"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 42</div>
+        <div class="q-text">¿Cuáles son los <strong>3 supuestos más volátiles</strong> del presupuesto?</div>
+        <div class="q-help">TRM, precio C de café, rendimiento de cosecha, otro.</div>
+        <textarea name="q42"></textarea>
+      </div>
+    </section>
+
+    <!-- ===== H ===== -->
+    <section class="q-section" id="sec-h">
+      <div class="sec-head">
+        <div class="sec-letter">H</div>
+        <h2>Reporting Ejecutivo</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 43</div>
+        <div class="q-text">¿Qué reportes ejecutivos genera contabilidad hoy y para quién?</div>
+        <textarea class="tall" name="q43"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 44</div>
+        <div class="q-text">¿Cuáles se piden con frecuencia pero son <strong>dolorosos de armar</strong>?</div>
+        <textarea name="q44"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 45</div>
+        <div class="q-text">¿Qué información Felipe pide habitualmente que cuesta entregar?</div>
+        <textarea name="q45" placeholder="Sean honestos — esto sirve para automatizarlo."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== I ===== -->
+    <section class="q-section" id="sec-i">
+      <div class="sec-head">
+        <div class="sec-letter">I</div>
+        <h2>Equipo & Roles</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 46</div>
+        <div class="q-text">¿Cuántas personas conforman el equipo contable? Roles y responsabilidades.</div>
+        <textarea class="tall" name="q46" placeholder="Nombre · Rol · Responsabilidades principales"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 47</div>
+        <div class="q-text">¿Quién es el contador titular y quién el revisor fiscal externo?</div>
+        <textarea name="q47"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 48</div>
+        <div class="q-text">¿Hay segregación de funciones?</div>
+        <div class="q-help">Quien registra ≠ quien aprueba ≠ quien paga.</div>
+        <div class="opt-group">
+          <label class="opt"><input type="radio" name="q48" value="Sí, completa" /> Sí, completa</label>
+          <label class="opt"><input type="radio" name="q48" value="Parcial" /> Parcial</label>
+          <label class="opt"><input type="radio" name="q48" value="No" /> No</label>
+        </div>
+        <textarea name="q48_detalle" placeholder="Detalles." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 49</div>
+        <div class="q-text">¿Quiénes tienen credenciales del sistema contable? ¿Se comparten contraseñas?</div>
+        <textarea name="q49" placeholder="Esto NO es para juzgar. Es para diseñar bien la integración."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== J ===== -->
+    <section class="q-section" id="sec-j">
+      <div class="sec-head">
+        <div class="sec-letter">J</div>
+        <h2>Regulatorio & Sector Cafetero</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 50</div>
+        <div class="q-text">¿Qué impuestos manejamos?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q50" value="IVA" /> IVA</label>
+          <label class="opt"><input type="checkbox" name="q50" value="ReteIVA" /> ReteIVA</label>
+          <label class="opt"><input type="checkbox" name="q50" value="ReteFuente" /> ReteFuente</label>
+          <label class="opt"><input type="checkbox" name="q50" value="ICA" /> ICA</label>
+          <label class="opt"><input type="checkbox" name="q50" value="Renta" /> Renta</label>
+          <label class="opt"><input type="checkbox" name="q50" value="Otros" /> Otros</label>
+        </div>
+        <textarea name="q50_otros" placeholder="Si marcaron 'Otros', especifiquen." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 51</div>
+        <div class="q-text">¿Quién prepara las declaraciones DIAN y con qué calendario?</div>
+        <textarea name="q51"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 52</div>
+        <div class="q-text">¿Hay obligaciones específicas del sector cafetero?</div>
+        <div class="q-help">FNC, ICO, certificaciones (Rainforest, Organic, FairTrade), reportes a la Federación.</div>
+        <textarea name="q52"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 53</div>
+        <div class="q-text">¿Tenemos exportaciones? ¿Quién maneja DEX, certificados de origen, reintegros?</div>
+        <textarea name="q53"></textarea>
+      </div>
+    </section>
+
+    <!-- ===== K ===== -->
+    <section class="q-section" id="sec-k">
+      <div class="sec-head">
+        <div class="sec-letter">K</div>
+        <h2>Dolores Reales</h2>
+        <div class="sub">La parte más importante. Sean directos.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 54</div>
+        <div class="q-text">Si pudieran <strong>eliminar 3 tareas</strong> que hacen cada semana sin que pase nada malo, ¿cuáles serían?</div>
+        <textarea class="tall" name="q54"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 55</div>
+        <div class="q-text">¿Qué información les piden que <strong>no tienen forma fácil de generar</strong>?</div>
+        <textarea class="tall" name="q55"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 56</div>
+        <div class="q-text">¿Qué les preocupa que un sistema con IA pudiera <strong>hacer mal</strong>?</div>
+        <textarea class="tall" name="q56" placeholder="Honestidad total. Vamos a diseñar pensando en estos riesgos."></textarea>
+      </div>
+    </section>
+
+    <!-- ===== SIGNATURE ===== -->
+    <div class="signature">
+      <h3>Firma del responsable</h3>
+      <div class="sig-grid">
+        <div><label>Nombre completo</label><input type="text" name="firma_nombre" placeholder="Quien lidera la respuesta" /></div>
+        <div><label>Rol</label><input type="text" name="firma_rol" /></div>
+        <div><label>Email</label><input type="email" name="firma_email" /></div>
+        <div><label>Fecha</label><input type="text" name="firma_fecha" id="firmaFecha" /></div>
+      </div>
+      <div style="margin-top:18px">
+        <label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)">Otros que ayudaron a responder</label>
+        <textarea name="firma_otros" placeholder="Nombres y roles de quienes contribuyeron."></textarea>
+      </div>
+    </div>
+
+    <div class="submit-bar">
+      <div class="left">
+        <h3>Listos para enviar.</h3>
+        <p>Descarguen el PDF para revisar internamente, o envíen directo a Felipe.</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn ghost" id="btnDownload">↓ Descargar JSON</button>
+        <button type="button" class="btn ghost" id="btnPdf">⌘ Imprimir / PDF</button>
+        <button type="button" class="btn" id="btnSend">→ Enviar a Felipe</button>
+      </div>
+    </div>
+
+  </form>
+</main>
+
+<footer>
+  <div class="div"></div>
+  La Palma & El Tucán · Discovery Contable · Construido con cuidado · 2026
+</footer>
+
+<div class="save-toast" id="saveToast"><span class="dot"></span>Guardado</div>
+
+<script src="../assets/form.js"></script>
+</body>
+</html>

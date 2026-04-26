@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="discovery-area" content="cultivos-asociados" />
+<meta name="discovery-recipient" content="John Jairo Cruz" />
+<title>Discovery Cultivos Asociados · La Palma & El Tucán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css" />
+<script src="../assets/config.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand-mark">La Palma &amp; El Tucán · Discovery Cultivos Asociados</div>
+    <h1>Lo que crece<br><em>al lado del café.</em></h1>
+    <p class="lede">Aguacate, banano, plátano y la huerta. Quiero entender qué tenemos, cuánto produce, y dónde podemos hacer que estos cultivos rindan mejor sin desviar foco del café.</p>
+
+    <div class="meta-row">
+      <div><span class="k">De</span><span class="v">Felipe Sardi</span></div>
+      <div><span class="k">Para</span><span class="v">John Jairo Cruz</span></div>
+      <div><span class="k">Plazo</span><span class="v">5 días hábiles</span></div>
+      <div><span class="k">Tiempo estimado</span><span class="v">20–25 min</span></div>
+    </div>
+
+    <div class="video-block">
+      <div class="video-label">Mensaje de Felipe</div>
+      <div class="video-frame">
+        <div class="video-placeholder">
+          <div class="ico">▶</div>
+          <div>Aquí va el video introductorio.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="intro">
+  <div class="intro-block">
+    <h2>Cómo responder bien</h2>
+    <ul>
+      <li><strong>Si un cultivo no aplica</strong> en tu finca o ya no se trabaja, marca N/A en esa sección y sigue.</li>
+      <li><strong>Sin formalismos</strong> — datos aproximados sirven.</li>
+      <li><strong>Capturas o fotos</strong> a la <a id="driveFolderLink" href="#" style="color:var(--ink-mute)">carpeta Drive</a> con el nombre del archivo en la respuesta.</li>
+      <li><strong>El formulario se guarda solo</strong> en este navegador.</li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <nav class="toc" id="toc">
+    <div class="toc-title">Secciones</div>
+    <ol>
+      <li><a href="#sec-a" data-target="sec-a">Panorama General</a></li>
+      <li><a href="#sec-b" data-target="sec-b">Aguacate</a></li>
+      <li><a href="#sec-c" data-target="sec-c">Banano & Plátano</a></li>
+      <li><a href="#sec-d" data-target="sec-d">Huerta</a></li>
+      <li><a href="#sec-e" data-target="sec-e">Comercial & Destino</a></li>
+      <li><a href="#sec-f" data-target="sec-f">Dolores Reales</a></li>
+    </ol>
+    <div class="progress-pill">
+      <div><span class="pct" id="pctNum">0</span><span style="font-size:12px;color:var(--ink-mute)">%</span></div>
+      <div style="margin-top:4px;font-size:11px">Avance</div>
+      <div class="pbar"><div id="pbarFill"></div></div>
+    </div>
+  </nav>
+
+  <form id="discoveryForm" autocomplete="off">
+
+    <!-- A. PANORAMA -->
+    <section class="q-section" id="sec-a">
+      <div class="sec-head">
+        <div class="sec-letter">A</div>
+        <h2>Panorama General</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 01</div>
+        <div class="q-text">¿Cuál es el <strong>propósito hoy</strong> de los cultivos asociados?</div>
+        <div class="q-help">Sombrío del café, ingreso adicional, autoconsumo, soporte ambiental, etc.</div>
+        <textarea name="q01"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 02</div>
+        <div class="q-text">¿Cuántas <strong>hectáreas o número de árboles/matas</strong> hay aproximadamente de cada cultivo?</div>
+        <textarea class="tall" name="q02" placeholder="Aguacate: ___ árboles. Banano: ___ matas. Plátano: ___ matas. Huerta: ___ m²."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 03</div>
+        <div class="q-text">¿Quién <strong>cuida</strong> estos cultivos?</div>
+        <div class="q-help">¿Personas dedicadas? ¿Los mismos del café? ¿Familias en finca?</div>
+        <textarea name="q03"></textarea>
+      </div>
+    </section>
+
+    <!-- B. AGUACATE -->
+    <section class="q-section" id="sec-b">
+      <div class="sec-head">
+        <div class="sec-letter">B</div>
+        <h2>Aguacate</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 04</div>
+        <div class="q-text">¿Qué <strong>variedad(es)</strong> de aguacate hay sembradas?</div>
+        <input type="text" name="q04" placeholder="Hass, Lorena, Papelillo, etc." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 05</div>
+        <div class="q-text">¿En qué <strong>meses produce</strong>? ¿Es producción continua o por temporadas?</div>
+        <textarea name="q05"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 06</div>
+        <div class="q-text">¿Cuál es la <strong>producción aproximada</strong> al año? (kilos o cajas)</div>
+        <input type="text" name="q06" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 07</div>
+        <div class="q-text">¿Qué <strong>manejo</strong> requiere (poda, fertilización, fitosanitario)?</div>
+        <textarea name="q07"></textarea>
+      </div>
+    </section>
+
+    <!-- C. BANANO & PLÁTANO -->
+    <section class="q-section" id="sec-c">
+      <div class="sec-head">
+        <div class="sec-letter">C</div>
+        <h2>Banano y Plátano</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 08</div>
+        <div class="q-text">¿Qué <strong>variedades</strong> hay?</div>
+        <input type="text" name="q08" placeholder="Plátano hartón, dominico, banano criollo, etc." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 09</div>
+        <div class="q-text">¿Cuál es la <strong>producción mensual</strong> aproximada?</div>
+        <input type="text" name="q09" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 10</div>
+        <div class="q-text">¿Cuáles son los principales <strong>problemas fitosanitarios</strong>?</div>
+        <textarea name="q10" placeholder="Sigatoka, picudo, etc."></textarea>
+      </div>
+    </section>
+
+    <!-- D. HUERTA -->
+    <section class="q-section" id="sec-d">
+      <div class="sec-head">
+        <div class="sec-letter">D</div>
+        <h2>Huerta</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 11</div>
+        <div class="q-text">¿Qué tienen sembrado <strong>actualmente</strong> en la huerta?</div>
+        <textarea name="q11" placeholder="Hortalizas, hierbas, frutales menores."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 12</div>
+        <div class="q-text">¿Cuál es el <strong>destino</strong> de lo que se cosecha?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q12" value="Autoconsumo finca" /> Autoconsumo en finca</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Equipo de trabajo" /> Equipo de trabajo</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Venta local" /> Venta local</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Visitantes" /> Visitantes / experiencia</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Otro" /> Otro</label>
+        </div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 13</div>
+        <div class="q-text">¿Quién planea qué se siembra y cuándo?</div>
+        <textarea name="q13"></textarea>
+      </div>
+    </section>
+
+    <!-- E. COMERCIAL & DESTINO -->
+    <section class="q-section" id="sec-e">
+      <div class="sec-head">
+        <div class="sec-letter">E</div>
+        <h2>Comercial y Destino de la Cosecha</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 14</div>
+        <div class="q-text">¿Dónde se <strong>vende</strong> hoy lo que producen los cultivos asociados?</div>
+        <div class="q-help">Mercado local, intermediarios, autoconsumo, regalo a equipo, otro.</div>
+        <textarea name="q14"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 15</div>
+        <div class="q-text">¿Hay <strong>desperdicio</strong> significativo? ¿Por qué pasa?</div>
+        <textarea name="q15" placeholder="Sin comprador, no hay tiempo de cosechar, mala temporada, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 16</div>
+        <div class="q-text">¿Cuánto representa aproximadamente el <strong>ingreso</strong> de cultivos asociados al mes/año?</div>
+        <input type="text" name="q16" placeholder="Si no hay venta, escribir 'sin venta'." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 17</div>
+        <div class="q-text">¿Quién lleva <strong>registro</strong> de producción y venta de cultivos asociados?</div>
+        <textarea name="q17"></textarea>
+      </div>
+    </section>
+
+    <!-- F. DOLORES -->
+    <section class="q-section" id="sec-f">
+      <div class="sec-head">
+        <div class="sec-letter">F</div>
+        <h2>Dolores Reales y Oportunidades</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 18</div>
+        <div class="q-text">¿Cuál es el <strong>cultivo asociado</strong> que <strong>más trabajo da</strong> y por qué?</div>
+        <textarea name="q18"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 19</div>
+        <div class="q-text">¿Cuál es el que <strong>mejor rinde</strong> (esfuerzo vs resultado)?</div>
+        <textarea name="q19"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 20</div>
+        <div class="q-text">Si hubiera tiempo y plata, ¿qué <strong>cambiarías o agregarías</strong>?</div>
+        <textarea name="q20" placeholder="Más árboles, otra variedad, riego, beneficio post-cosecha, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 21</div>
+        <div class="q-text">¿Qué <strong>información</strong> ayudaría a decidir mejor sobre estos cultivos?</div>
+        <textarea name="q21" placeholder="Precios de mercado, demanda, rendimientos comparados, alertas climáticas."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 22</div>
+        <div class="q-text">Cualquier <strong>cosa adicional</strong> que quieras compartir sobre los cultivos asociados.</div>
+        <textarea class="tall" name="q22"></textarea>
+      </div>
+    </section>
+
+    <!-- SIGNATURE -->
+    <div class="signature">
+      <h3>Firma del responsable</h3>
+      <div class="sig-grid">
+        <div><label>Nombre completo</label><input type="text" name="firma_nombre" /></div>
+        <div><label>Rol</label><input type="text" name="firma_rol" /></div>
+        <div><label>Email</label><input type="email" name="firma_email" /></div>
+        <div><label>Fecha</label><input type="text" name="firma_fecha" id="firmaFecha" /></div>
+      </div>
+    </div>
+
+    <div class="submit-bar">
+      <div class="left">
+        <h3>Listo para enviar.</h3>
+        <p>Descarga PDF o envía directo a Felipe.</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn ghost" id="btnDownload">↓ JSON</button>
+        <button type="button" class="btn ghost" id="btnPdf">⌘ PDF</button>
+        <button type="button" class="btn" id="btnSend">→ Enviar a Felipe</button>
+      </div>
+    </div>
+
+  </form>
+</main>
+
+<footer>
+  <div class="div"></div>
+  La Palma & El Tucán · Discovery Cultivos Asociados · 2026
+</footer>
+
+<div class="save-toast" id="saveToast"><span class="dot"></span>Guardado</div>
+<script src="../assets/form.js"></script>
+</body>
+</html>

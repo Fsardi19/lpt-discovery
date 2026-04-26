@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="discovery-area" content="calidades-inventarios" />
+<meta name="discovery-recipient" content="Ismelda Cubillos + Sergio" />
+<title>Discovery Calidades e Inventarios · La Palma & El Tucán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css" />
+<script src="../assets/config.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand-mark">La Palma &amp; El Tucán · Discovery Calidades e Inventarios</div>
+    <h1>El laboratorio,<br><em>la bodega, el lote.</em></h1>
+    <p class="lede">Quiero entender cómo trabajan en laboratorio, cómo conforman lotes y microlotes, cómo manejan los inventarios y cómo alistan el empaque. La meta: que la trazabilidad y los datos los tengamos limpios y al día sin que sea una carga.</p>
+
+    <div class="meta-row">
+      <div><span class="k">De</span><span class="v">Felipe Sardi</span></div>
+      <div><span class="k">Para</span><span class="v">Ismelda Cubillos + Sergio</span></div>
+      <div><span class="k">Supervisa</span><span class="v">Katherine Rodriguez</span></div>
+      <div><span class="k">Plazo</span><span class="v">5 días hábiles</span></div>
+      <div><span class="k">Tiempo estimado</span><span class="v">30–40 min</span></div>
+    </div>
+
+    <div class="video-block">
+      <div class="video-label">Mensaje de Felipe</div>
+      <div class="video-frame">
+        <div class="video-placeholder">
+          <div class="ico">▶</div>
+          <div>Aquí va el video introductorio.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="intro">
+  <div class="intro-block">
+    <h2>Cómo responder bien</h2>
+    <ul>
+      <li><strong>Pueden responder los dos juntos</strong> o cada uno una parte. Solo firmen al final quién aportó qué.</li>
+      <li><strong>Sé específico</strong> con cifras, formularios, equipos y software.</li>
+      <li><strong>Capturas</strong> (planillas de catación, formato de inventario, etiquetas, etc.) súbanlas a la <a id="driveFolderLink" href="#" style="color:var(--ink-mute)">carpeta Drive</a> y mencionen el archivo.</li>
+      <li><strong>Si no aplica</strong> escriban N/A y sigan.</li>
+      <li><strong>Se guarda solo</strong> en este navegador.</li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <nav class="toc" id="toc">
+    <div class="toc-title">Secciones</div>
+    <ol>
+      <li><a href="#sec-a" data-target="sec-a">Laboratorio</a></li>
+      <li><a href="#sec-b" data-target="sec-b">Lotes & Microlotes</a></li>
+      <li><a href="#sec-c" data-target="sec-c">Inventarios</a></li>
+      <li><a href="#sec-d" data-target="sec-d">Empaque & Alistamiento</a></li>
+      <li><a href="#sec-e" data-target="sec-e">Trazabilidad</a></li>
+      <li><a href="#sec-f" data-target="sec-f">Coordinación</a></li>
+      <li><a href="#sec-g" data-target="sec-g">Herramientas & Registros</a></li>
+      <li><a href="#sec-h" data-target="sec-h">Dolores Reales</a></li>
+    </ol>
+    <div class="progress-pill">
+      <div><span class="pct" id="pctNum">0</span><span style="font-size:12px;color:var(--ink-mute)">%</span></div>
+      <div style="margin-top:4px;font-size:11px">Avance</div>
+      <div class="pbar"><div id="pbarFill"></div></div>
+    </div>
+  </nav>
+
+  <form id="discoveryForm" autocomplete="off">
+
+    <!-- A. LABORATORIO -->
+    <section class="q-section" id="sec-a">
+      <div class="sec-head">
+        <div class="sec-letter">A</div>
+        <h2>Laboratorio de Pruebas</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 01</div>
+        <div class="q-text">¿Cuántas <strong>cataciones</strong> hacen en promedio por semana?</div>
+        <input type="text" name="q01" placeholder="Ej: 12-15 cataciones/semana en cosecha." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 02</div>
+        <div class="q-text">¿Qué <strong>protocolo</strong> de catación usan?</div>
+        <div class="q-help">SCA, COE, propio, mixto. Si tienen varios, marquen.</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q02" value="SCA" /> SCA</label>
+          <label class="opt"><input type="checkbox" name="q02" value="COE" /> COE</label>
+          <label class="opt"><input type="checkbox" name="q02" value="Propio LP&T" /> Propio LP&T</label>
+          <label class="opt"><input type="checkbox" name="q02" value="Otro" /> Otro</label>
+        </div>
+        <textarea name="q02_otro" placeholder="Aclaraciones." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 03</div>
+        <div class="q-text">¿Quiénes están <strong>certificados Q-Grader</strong> (o similar)?</div>
+        <textarea name="q03"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 04</div>
+        <div class="q-text">¿Qué <strong>variables</strong> registran de cada catación?</div>
+        <div class="q-help">Puntaje SCA, atributos individuales, defectos, notas, fragancia/aroma, etc.</div>
+        <textarea class="tall" name="q04"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 05</div>
+        <div class="q-text">¿En qué <strong>medio</strong> registran las cataciones hoy?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q05" value="Planilla papel" /> Planilla papel</label>
+          <label class="opt"><input type="checkbox" name="q05" value="Excel/Sheets" /> Excel / Google Sheets</label>
+          <label class="opt"><input type="checkbox" name="q05" value="Cropster" /> Cropster</label>
+          <label class="opt"><input type="checkbox" name="q05" value="Cup of Excellence software" /> Software COE</label>
+          <label class="opt"><input type="checkbox" name="q05" value="App propia" /> App propia</label>
+          <label class="opt"><input type="checkbox" name="q05" value="Otro" /> Otro</label>
+        </div>
+        <textarea name="q05_otro" placeholder="Especificar." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 06</div>
+        <div class="q-text">¿Qué <strong>equipos</strong> tienen en el laboratorio?</div>
+        <div class="q-help">Tostador de muestra, molino, balanza, medidor de humedad, color (Agtron), Aw, etc.</div>
+        <textarea name="q06"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 07</div>
+        <div class="q-text">¿Cómo <strong>se decide</strong> que un lote alcanza puntaje para microlote vs lote estándar vs comercial?</div>
+        <textarea name="q07"></textarea>
+      </div>
+    </section>
+
+    <!-- B. LOTES & MICROLOTES -->
+    <section class="q-section" id="sec-b">
+      <div class="sec-head">
+        <div class="sec-letter">B</div>
+        <h2>Conformación de Lotes y Microlotes</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 08</div>
+        <div class="q-text">¿Cómo <strong>se nombran/codifican</strong> los lotes y microlotes?</div>
+        <textarea name="q08" placeholder="Ej: LP24-001 = año + correlativo. O nombres propios (Geisha Honey 2024)."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 09</div>
+        <div class="q-text">¿Cuántos <strong>microlotes únicos</strong> sale en promedio por cosecha?</div>
+        <input type="text" name="q09" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 10</div>
+        <div class="q-text">¿Quién <strong>decide</strong> finalmente qué entra a microlote y qué a lote estándar?</div>
+        <textarea name="q10"></textarea>
+      </div>
+    </section>
+
+    <!-- C. INVENTARIOS -->
+    <section class="q-section" id="sec-c">
+      <div class="sec-head">
+        <div class="sec-letter">C</div>
+        <h2>Inventarios</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 11</div>
+        <div class="q-text">¿Qué <strong>tipos de inventario</strong> manejan?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q11" value="Pergamino seco" /> Pergamino seco</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Café verde" /> Café verde</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Tostado terminado" /> Tostado terminado</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Insumos" /> Insumos (sacos, etiquetas, GrainPro)</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Muestras" /> Muestras (laboratorio + clientes)</label>
+        </div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 12</div>
+        <div class="q-text">¿Cómo y <strong>dónde se guardan</strong> los inventarios? ¿Hay condiciones especiales (humedad, temperatura)?</div>
+        <textarea name="q12"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 13</div>
+        <div class="q-text">¿Cómo se lleva el <strong>kardex</strong> de inventarios hoy?</div>
+        <div class="q-help">Cuaderno, Excel, software, app, etc.</div>
+        <textarea name="q13"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 14</div>
+        <div class="q-text">¿Cada cuánto se hace <strong>conteo físico</strong>?</div>
+        <input type="text" name="q14" placeholder="Ej: mensual, trimestral, anual." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 15</div>
+        <div class="q-text">¿Hay <strong>diferencias</strong> recurrentes entre kardex y físico? ¿Por qué?</div>
+        <textarea name="q15"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 16</div>
+        <div class="q-text">¿Cómo manejan <strong>FIFO</strong> u otro método para café que envejece?</div>
+        <textarea name="q16"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 17</div>
+        <div class="q-text">¿Cuánto inventario en kilos/sacos hay <strong>típicamente</strong> en cada momento?</div>
+        <input type="text" name="q17" placeholder="Estimado." />
+      </div>
+    </section>
+
+    <!-- D. EMPAQUE -->
+    <section class="q-section" id="sec-d">
+      <div class="sec-head">
+        <div class="sec-letter">D</div>
+        <h2>Empaque y Alistamiento</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 18</div>
+        <div class="q-text">¿Qué <strong>presentaciones</strong> de empaque manejan?</div>
+        <div class="q-help">Sacos 60kg/70kg, GrainPro, vacuum bags, cajas pequeñas para muestra, etc.</div>
+        <textarea name="q18"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 19</div>
+        <div class="q-text">¿Cuál es el <strong>proceso</strong> desde que llega una orden de Jeffrey hasta que el café sale empacado?</div>
+        <textarea class="tall" name="q19" placeholder="Paso a paso."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 20</div>
+        <div class="q-text">¿Cuánto <strong>tiempo</strong> toma alistar un pedido típico?</div>
+        <input type="text" name="q20" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 21</div>
+        <div class="q-text">¿Cómo se manejan las <strong>etiquetas</strong> y trazabilidad del empaque?</div>
+        <textarea name="q21"></textarea>
+      </div>
+    </section>
+
+    <!-- E. TRAZABILIDAD -->
+    <section class="q-section" id="sec-e">
+      <div class="sec-head">
+        <div class="sec-letter">E</div>
+        <h2>Trazabilidad</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 22</div>
+        <div class="q-text">Si un cliente hace un <strong>claim</strong>, ¿cuánto tiempo toma rastrear el lote desde el saco hasta el cafetal?</div>
+        <input type="text" name="q22" />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 23</div>
+        <div class="q-text">¿Qué información se conserva del <strong>recorrido</strong> del lote (cafetal → cliente)?</div>
+        <textarea class="tall" name="q23"></textarea>
+      </div>
+    </section>
+
+    <!-- F. COORDINACIÓN -->
+    <section class="q-section" id="sec-f">
+      <div class="sec-head">
+        <div class="sec-letter">F</div>
+        <h2>Coordinación</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 24</div>
+        <div class="q-text">¿Con qué <strong>frecuencia</strong> coordinan con beneficio (John Jairo) y con qué tipo de info?</div>
+        <textarea name="q24"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 25</div>
+        <div class="q-text">¿Con qué frecuencia coordinan con <strong>comercial (Jeffrey)</strong> y para qué?</div>
+        <textarea name="q25"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 26</div>
+        <div class="q-text">¿Dónde se <strong>traba</strong> la información cuando alguien la pide rápido?</div>
+        <textarea name="q26"></textarea>
+      </div>
+    </section>
+
+    <!-- G. HERRAMIENTAS -->
+    <section class="q-section" id="sec-g">
+      <div class="sec-head">
+        <div class="sec-letter">G</div>
+        <h2>Herramientas y Registros</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 27</div>
+        <div class="q-text">¿Qué <strong>herramientas digitales</strong> usan en el día a día?</div>
+        <div class="q-help">Cropster, AgroWin, Sheets, WhatsApp, app propia, ninguna.</div>
+        <textarea name="q27"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 28</div>
+        <div class="q-text">¿Hay datos que <strong>les gustaría</strong> tener mejor organizados pero hoy no se hace?</div>
+        <textarea name="q28"></textarea>
+      </div>
+    </section>
+
+    <!-- H. DOLORES -->
+    <section class="q-section" id="sec-h">
+      <div class="sec-head">
+        <div class="sec-letter">H</div>
+        <h2>Dolores Reales</h2>
+        <div class="sub">Sin filtros.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 29</div>
+        <div class="q-text">Si pudieran <strong>quitarse 3 tareas</strong> de la semana sin que pase nada, ¿cuáles serían?</div>
+        <textarea class="tall" name="q29"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 30</div>
+        <div class="q-text">Si tuvieran un <strong>asistente</strong> que llevara registros y recordara cosas, ¿qué le pondrían a hacer primero?</div>
+        <textarea class="tall" name="q30"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 31</div>
+        <div class="q-text">¿Qué les <strong>preocupa</strong> de meter IA en su área?</div>
+        <textarea name="q31"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 32</div>
+        <div class="q-text">Cualquier <strong>cosa adicional</strong> que quieran agregar.</div>
+        <textarea name="q32"></textarea>
+      </div>
+    </section>
+
+    <!-- SIGNATURE -->
+    <div class="signature">
+      <h3>Firma</h3>
+      <div class="sig-grid">
+        <div><label>Nombre principal</label><input type="text" name="firma_nombre" /></div>
+        <div><label>Rol</label><input type="text" name="firma_rol" /></div>
+        <div><label>Email</label><input type="email" name="firma_email" /></div>
+        <div><label>Fecha</label><input type="text" name="firma_fecha" id="firmaFecha" /></div>
+      </div>
+      <div style="margin-top:18px">
+        <label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)">Otra(s) persona(s) que respondieron</label>
+        <textarea name="firma_otros" placeholder="Ej: Ismelda contestó secciones A-D, Sergio E-H."></textarea>
+      </div>
+    </div>
+
+    <div class="submit-bar">
+      <div class="left">
+        <h3>Listo para enviar.</h3>
+        <p>Descarga PDF o envía directo a Felipe.</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn ghost" id="btnDownload">↓ JSON</button>
+        <button type="button" class="btn ghost" id="btnPdf">⌘ PDF</button>
+        <button type="button" class="btn" id="btnSend">→ Enviar a Felipe</button>
+      </div>
+    </div>
+
+  </form>
+</main>
+
+<footer>
+  <div class="div"></div>
+  La Palma & El Tucán · Discovery Calidades e Inventarios · 2026
+</footer>
+
+<div class="save-toast" id="saveToast"><span class="dot"></span>Guardado</div>
+<script src="../assets/form.js"></script>
+</body>
+</html>
