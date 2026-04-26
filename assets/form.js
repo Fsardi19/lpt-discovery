@@ -333,6 +333,13 @@
     driveLinkEl.style.color = 'var(--green)';
   }
 
+  // Inyectar video Synthesia si está configurado
+  if (window.LPT_VIDEO_EMBED) {
+    document.querySelectorAll('.video-frame').forEach(frame => {
+      frame.innerHTML = `<iframe src="${window.LPT_VIDEO_EMBED}" loading="lazy" allowfullscreen allow="encrypted-media; fullscreen;" referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+    });
+  }
+
   load();
   updateProgress();
 })();
