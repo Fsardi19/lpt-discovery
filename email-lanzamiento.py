@@ -94,7 +94,7 @@ add_header('QUIÉN RESPONDE QUÉ')
 
 assignments = [
     ('Martica + equipo contable LP&T', 'Contable'),
-    ('Catherine Monsalve', 'Tesorería y Bancos'),
+    ('Katherine Monsalve', 'Tesorería y Bancos'),
     ('William Nieto', 'Planeación Financiera y Presupuestos'),
     ('Jeffrey', 'Comercial'),
     ('John Jairo', 'Operaciones de Café + Cultivos Asociados'),

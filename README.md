@@ -6,7 +6,7 @@ asistencia ejecutiva con IA.
 ## Áreas
 
 - **Contable** — Martica + Equipo LP&T
-- **Tesorería y Bancos** — Catherine Monsalve
+- **Tesorería y Bancos** — Katherine Monsalve
 - **Planeación Financiera y Presupuestos** — William Nieto
 - **Comercial** — Jeffrey
 - **Operaciones de Café** — John Jairo Cruz
