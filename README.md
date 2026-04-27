@@ -13,6 +13,7 @@ asistencia ejecutiva con IA.
 - **Cultivos Asociados** — John Jairo Cruz
 - **Calidades e Inventarios** — Ismelda Cubillos + Sergio
 - **Tecnología** — Jhonatan Benavides
+- **Mercadeo y Comunicación** — Elisa + Laura
 
 ## Stack
 
@@ -41,7 +42,8 @@ discovery/
 ├── operaciones-cafe/
 ├── cultivos-asociados/
 ├── calidades-inventarios/
-└── tecnologia/
+├── tecnologia/
+└── mercadeo-comunicacion/
 ```
 
 ## Privacidad
