@@ -12,6 +12,7 @@ asistencia ejecutiva con IA.
 - **Operaciones de Café** — John Jairo Cruz
 - **Cultivos Asociados** — John Jairo Cruz
 - **Calidades e Inventarios** — Ismelda Cubillos + Sergio
+- **Tecnología** — Jhonatan Benavides
 
 ## Stack
 
@@ -39,7 +40,8 @@ discovery/
 ├── comercial/
 ├── operaciones-cafe/
 ├── cultivos-asociados/
-└── calidades-inventarios/
+├── calidades-inventarios/
+└── tecnologia/
 ```
 
 ## Privacidad

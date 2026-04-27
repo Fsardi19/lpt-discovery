@@ -32,7 +32,7 @@ def add_meta(label, value):
     p = doc.add_paragraph()
     r1 = p.add_run(label)
     r1.bold = True
-    r2 = p.add_run(value)
+    p.add_run(value)
     p.paragraph_format.space_after = Pt(2)
 
 
@@ -63,7 +63,7 @@ tr.font.size = Pt(14)
 tr.font.color.rgb = RGBColor(0x1F, 0x3D, 0x2B)
 title.paragraph_format.space_after = Pt(14)
 
-add_meta('Para: ', 'martica@..., catherine.monsalve@..., william.nieto@..., jeffrey@..., john.jairo@..., ismelda@..., sergio@...')
+add_meta('Para: ', 'martica@..., catherine.monsalve@..., william.nieto@..., jeffrey@..., john.jairo@..., ismelda@..., sergio@..., jhonatan.benavides@...')
 add_meta('CC: ', 'katherine.rodriguez@...')
 add_meta('Asunto: ', 'Necesito tu ayuda — 30 a 60 minutos en los próximos 5 días')
 
@@ -99,6 +99,7 @@ assignments = [
     ('Jeffrey', 'Comercial'),
     ('John Jairo', 'Operaciones de Café + Cultivos Asociados'),
     ('Ismelda + Sergio', 'Calidades e Inventarios'),
+    ('Jhonatan Benavides', 'Tecnología'),
 ]
 
 for who, area in assignments:

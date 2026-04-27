@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="discovery-area" content="tecnologia" />
+<meta name="discovery-recipient" content="Jhonatan Benavides" />
+<title>Discovery Tecnología · La Palma & El Tucán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css" />
+<script src="../assets/config.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand-mark">La Palma &amp; El Tucán · Discovery Tecnología</div>
+    <h1>El stack, la red,<br><em>el dato vivo.</em></h1>
+    <p class="lede">Tu área es la columna vertebral de todo lo que vamos a construir. Necesito un mapa honesto de lo que hay hoy: hardware, software, servicios, accesos, deuda técnica. Sin filtros — entre más franco, mejor diseño.</p>
+
+    <div class="meta-row">
+      <div><span class="k">De</span><span class="v">Felipe Sardi</span></div>
+      <div><span class="k">Para</span><span class="v">Jhonatan Benavides · Tecnología</span></div>
+      <div><span class="k">Plazo</span><span class="v">5 días hábiles</span></div>
+      <div><span class="k">Tiempo estimado</span><span class="v">40–55 min</span></div>
+      <div><span class="k">Confidencialidad</span><span class="v">Interno · Crítico</span></div>
+    </div>
+
+    <div class="video-block">
+      <div class="video-label">Mensaje de Felipe</div>
+      <div class="video-frame">
+        <div class="video-placeholder">
+          <div class="ico">▶</div>
+          <div>Aquí va el video introductorio.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="intro">
+  <div class="intro-block">
+    <h2>Cómo responder bien</h2>
+    <ul>
+      <li><strong>Esta es probablemente la sección más técnica</strong> de todo el discovery. Sé específico con versiones, vendors, planes contratados, IPs, dominios.</li>
+      <li><strong>No es auditoría.</strong> Si hay deuda técnica, contraseñas compartidas, backups que no funcionan, dilo. Necesito saber el estado real para diseñar bien.</li>
+      <li><strong>Capturas y diagramas</strong> (topología de red, dashboards de proveedores, panel de Google Workspace, etc.) súbelos a la <a id="driveFolderLink" href="#" style="color:var(--ink-mute)">carpeta Drive</a> y mencionas el archivo en la respuesta.</li>
+      <li><strong>Si no recuerdas algo exacto</strong>, escribe "verificar" y seguimos — no demores la respuesta por buscar un dato puntual.</li>
+      <li><strong>Se guarda solo</strong> en este navegador.</li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <nav class="toc" id="toc">
+    <div class="toc-title">Secciones</div>
+    <ol>
+      <li><a href="#sec-a" data-target="sec-a">Equipo & Rol</a></li>
+      <li><a href="#sec-b" data-target="sec-b">Infraestructura</a></li>
+      <li><a href="#sec-c" data-target="sec-c">Sistemas & Apps</a></li>
+      <li><a href="#sec-d" data-target="sec-d">Datos & Backups</a></li>
+      <li><a href="#sec-e" data-target="sec-e">Cuentas & Proveedores</a></li>
+      <li><a href="#sec-f" data-target="sec-f">Seguridad & Accesos</a></li>
+      <li><a href="#sec-g" data-target="sec-g">Soporte Operativo</a></li>
+      <li><a href="#sec-h" data-target="sec-h">Proyectos en Curso</a></li>
+      <li><a href="#sec-i" data-target="sec-i">Coordinación</a></li>
+      <li><a href="#sec-j" data-target="sec-j">Dolores Reales</a></li>
+      <li><a href="#sec-files" data-target="sec-files">Archivos & Hojas</a></li>
+    </ol>
+    <div class="progress-pill">
+      <div><span class="pct" id="pctNum">0</span><span style="font-size:12px;color:var(--ink-mute)">%</span></div>
+      <div style="margin-top:4px;font-size:11px">Avance</div>
+      <div class="pbar"><div id="pbarFill"></div></div>
+    </div>
+  </nav>
+
+  <form id="discoveryForm" autocomplete="off">
+
+    <!-- A. EQUIPO & ROL -->
+    <section class="q-section" id="sec-a">
+      <div class="sec-head">
+        <div class="sec-letter">A</div>
+        <h2>Equipo y Rol</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 01</div>
+        <div class="q-text">¿Cuál es tu <strong>rol exacto</strong> hoy y a quién reportas?</div>
+        <textarea name="q01" placeholder="Ej: Coordinador de TI, reporto a Felipe / a un gerente, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 02</div>
+        <div class="q-text">¿Hay <strong>otras personas</strong> en el equipo de tecnología (internas o externas)?</div>
+        <textarea name="q02" placeholder="Nombre · Rol · Interno / Outsourcing"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 03</div>
+        <div class="q-text">¿Cuántas <strong>personas usuarias</strong> dependen de tu soporte? (toda la operación + finca + oficinas)</div>
+        <input type="text" name="q03" placeholder="Aproximado." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 04</div>
+        <div class="q-text">¿Cuáles son las <strong>3 cosas que más te ocupan</strong> el día a día?</div>
+        <textarea class="tall" name="q04"></textarea>
+      </div>
+    </section>
+
+    <!-- B. INFRAESTRUCTURA -->
+    <section class="q-section" id="sec-b">
+      <div class="sec-head">
+        <div class="sec-letter">B</div>
+        <h2>Infraestructura</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 05</div>
+        <div class="q-text">¿Tenemos <strong>servidores propios</strong> (físicos o virtuales)?</div>
+        <textarea name="q05" placeholder="On-premise, VPS, AWS, Azure, GCP, Hetzner, etc. Cuáles, qué corren, dónde están."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 06</div>
+        <div class="q-text">¿Cómo es la <strong>conectividad de la finca</strong> (LP&T)?</div>
+        <div class="q-help">ISP, ancho de banda, fibra/satelital, redundancia, cobertura WiFi.</div>
+        <textarea name="q06"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 07</div>
+        <div class="q-text">¿Cómo es la <strong>conectividad de la oficina principal</strong> (Coffee Hub)?</div>
+        <textarea name="q07"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 08</div>
+        <div class="q-text">¿Hay <strong>VPN, firewall, networking</strong> empresarial?</div>
+        <textarea name="q08" placeholder="Marca, configuración, quién la administra."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 09</div>
+        <div class="q-text">¿Qué <strong>computadores y dispositivos</strong> usan los equipos?</div>
+        <div class="q-help">Aproximadamente: cuántos Mac, cuántos PC, cuántos teléfonos corporativos, tabletas. Si hay BYOD también dilo.</div>
+        <textarea name="q09"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 10</div>
+        <div class="q-text">¿Hay <strong>impresoras, scanners, cámaras IP, sensores IoT</strong> u otros equipos en red?</div>
+        <textarea name="q10"></textarea>
+      </div>
+    </section>
+
+    <!-- C. SISTEMAS & APPS -->
+    <section class="q-section" id="sec-c">
+      <div class="sec-head">
+        <div class="sec-letter">C</div>
+        <h2>Sistemas y Aplicaciones en Uso</h2>
+        <div class="sub">Inventario completo de software. Esto es CRÍTICO para diseñar las integraciones futuras.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 11</div>
+        <div class="q-text">¿Qué <strong>suite de productividad</strong> usamos?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q11" value="Google Workspace" /> Google Workspace</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Microsoft 365" /> Microsoft 365</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Mixto" /> Mixto</label>
+          <label class="opt"><input type="checkbox" name="q11" value="Otro" /> Otro</label>
+        </div>
+        <textarea name="q11_detalle" placeholder="Plan contratado, número de licencias, dominio." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 12</div>
+        <div class="q-text">¿Qué <strong>sistema contable</strong> usa LP&T?</div>
+        <div class="q-help">Marca todo lo que aplique. Versión, instalación local o cloud.</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q12" value="AgroWin" /> AgroWin</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Siigo" /> Siigo</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Alegra" /> Alegra</label>
+          <label class="opt"><input type="checkbox" name="q12" value="World Office" /> World Office</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Helisa" /> Helisa</label>
+          <label class="opt"><input type="checkbox" name="q12" value="SAP" /> SAP</label>
+          <label class="opt"><input type="checkbox" name="q12" value="Otro" /> Otro</label>
+        </div>
+        <textarea name="q12_detalle" placeholder="Versión, instalación, base de datos, integraciones." style="margin-top:10px"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 13</div>
+        <div class="q-text">¿Qué otras aplicaciones <strong>core</strong> tenemos contratadas? Lista lo más completo posible.</div>
+        <div class="q-help">CRM (HubSpot/Pipedrive), facturación electrónica DIAN, cataciones (Cropster), nómina, pasarela de pago, etc.</div>
+        <textarea class="tall" name="q13" placeholder="Aplicación · Para qué sirve · Quién la usa · Plan/costo aproximado"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 14</div>
+        <div class="q-text">¿Qué <strong>herramientas de comunicación interna</strong> usan?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="checkbox" name="q14" value="WhatsApp Business" /> WhatsApp Business</label>
+          <label class="opt"><input type="checkbox" name="q14" value="WhatsApp personal" /> WhatsApp personal</label>
+          <label class="opt"><input type="checkbox" name="q14" value="Slack" /> Slack</label>
+          <label class="opt"><input type="checkbox" name="q14" value="Microsoft Teams" /> Microsoft Teams</label>
+          <label class="opt"><input type="checkbox" name="q14" value="Google Chat" /> Google Chat</label>
+          <label class="opt"><input type="checkbox" name="q14" value="Zoom" /> Zoom</label>
+          <label class="opt"><input type="checkbox" name="q14" value="Google Meet" /> Google Meet</label>
+          <label class="opt"><input type="checkbox" name="q14" value="Otro" /> Otro</label>
+        </div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 15</div>
+        <div class="q-text">¿Estamos usando <strong>Fireflies, Otter, Granola</strong> u otra herramienta de transcripción de reuniones?</div>
+        <textarea name="q15" placeholder="Cuál, quién la usa, plan."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 16</div>
+        <div class="q-text">¿Hay <strong>aplicaciones internas</strong> (apps web, intranet, dashboards propios) desarrolladas para LP&T?</div>
+        <textarea name="q16"></textarea>
+      </div>
+    </section>
+
+    <!-- D. DATOS & BACKUPS -->
+    <section class="q-section" id="sec-d">
+      <div class="sec-head">
+        <div class="sec-letter">D</div>
+        <h2>Datos y Backups</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 17</div>
+        <div class="q-text">¿Dónde <strong>vive principalmente</strong> la información del negocio?</div>
+        <div class="q-help">Drive, OneDrive, NAS local, Dropbox, sistemas verticales (AgroWin, etc.), papel.</div>
+        <textarea class="tall" name="q17"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 18</div>
+        <div class="q-text">¿Hay <strong>política de backups</strong>? ¿Quién la opera, cada cuánto, dónde se guardan?</div>
+        <textarea name="q18"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 19</div>
+        <div class="q-text">¿Cuándo fue la <strong>última vez que se restauró un backup</strong> exitosamente?</div>
+        <input type="text" name="q19" placeholder="Si nunca, di 'nunca' — eso es info crítica." />
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 20</div>
+        <div class="q-text">¿Hemos tenido <strong>incidentes de pérdida de información</strong>? Cuéntanos brevemente.</div>
+        <textarea name="q20"></textarea>
+      </div>
+    </section>
+
+    <!-- E. CUENTAS & PROVEEDORES -->
+    <section class="q-section" id="sec-e">
+      <div class="sec-head">
+        <div class="sec-letter">E</div>
+        <h2>Cuentas y Proveedores Tecnológicos</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 21</div>
+        <div class="q-text">¿Tenemos cuentas de <strong>cloud (AWS / Azure / GCP)</strong>?</div>
+        <div class="q-help">Cuáles, para qué se usan, costo mensual aproximado, quién es admin.</div>
+        <textarea class="tall" name="q21"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 22</div>
+        <div class="q-text">¿Tenemos <strong>dominios</strong> registrados?</div>
+        <div class="q-help">Lista los principales, dónde están registrados (GoDaddy, Namecheap, Google Domains), cuándo vencen.</div>
+        <textarea name="q22"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 23</div>
+        <div class="q-text">¿Quiénes son nuestros <strong>proveedores tecnológicos externos</strong> recurrentes?</div>
+        <div class="q-help">Soporte de AgroWin, soporte de redes, desarrolladores externos, agencia web, etc.</div>
+        <textarea class="tall" name="q23"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 24</div>
+        <div class="q-text">Estimado de <strong>gasto mensual total en tecnología</strong> (todas las suscripciones, cloud, soporte).</div>
+        <input type="text" name="q24" placeholder="Aproximado en COP/USD." />
+      </div>
+    </section>
+
+    <!-- F. SEGURIDAD & ACCESOS -->
+    <section class="q-section" id="sec-f">
+      <div class="sec-head">
+        <div class="sec-letter">F</div>
+        <h2>Seguridad y Accesos</h2>
+        <div class="sub">Esto NO es para juzgar. Es para que el sistema futuro se diseñe bien desde el inicio.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 25</div>
+        <div class="q-text">¿Tenemos <strong>gestor de contraseñas</strong> corporativo?</div>
+        <div class="opt-group row">
+          <label class="opt"><input type="radio" name="q25" value="1Password" /> 1Password</label>
+          <label class="opt"><input type="radio" name="q25" value="Bitwarden" /> Bitwarden</label>
+          <label class="opt"><input type="radio" name="q25" value="LastPass" /> LastPass</label>
+          <label class="opt"><input type="radio" name="q25" value="Otro" /> Otro</label>
+          <label class="opt"><input type="radio" name="q25" value="No" /> No</label>
+        </div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 26</div>
+        <div class="q-text">¿Cómo se manejan las <strong>credenciales compartidas</strong>?</div>
+        <div class="q-help">Ej: cuenta del banco, cuenta DIAN, hosting, etc. ¿Dónde y cómo se guardan?</div>
+        <textarea name="q26"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 27</div>
+        <div class="q-text">¿Tenemos <strong>2FA / MFA</strong> activado en cuentas críticas?</div>
+        <textarea name="q27" placeholder="En cuáles sí, en cuáles no."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 28</div>
+        <div class="q-text">¿Cómo se hace <strong>onboarding y offboarding</strong> tecnológico cuando alguien entra/sale del equipo?</div>
+        <textarea name="q28" placeholder="Crear/eliminar email, accesos, devolver equipos, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 29</div>
+        <div class="q-text">¿Hemos tenido <strong>incidentes de seguridad</strong>? (phishing, intentos de ransomware, accesos no autorizados)</div>
+        <textarea name="q29"></textarea>
+      </div>
+    </section>
+
+    <!-- G. SOPORTE -->
+    <section class="q-section" id="sec-g">
+      <div class="sec-head">
+        <div class="sec-letter">G</div>
+        <h2>Soporte Operativo</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 30</div>
+        <div class="q-text">¿Cómo recibe el equipo <strong>soporte técnico</strong> cuando algo falla?</div>
+        <textarea name="q30" placeholder="WhatsApp directo a ti, ticket, email, otro."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 31</div>
+        <div class="q-text">¿Cuáles son los <strong>tickets/problemas más recurrentes</strong>?</div>
+        <textarea name="q31" placeholder="Wifi en finca, contraseñas olvidadas, AgroWin no abre, impresora, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 32</div>
+        <div class="q-text">¿Cuánto de tu tiempo se va en <strong>apagar incendios</strong> vs <strong>proyectos nuevos</strong>?</div>
+        <input type="text" name="q32" placeholder="Estimado %." />
+      </div>
+    </section>
+
+    <!-- H. PROYECTOS EN CURSO -->
+    <section class="q-section" id="sec-h">
+      <div class="sec-head">
+        <div class="sec-letter">H</div>
+        <h2>Proyectos en Curso o Evaluación</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 33</div>
+        <div class="q-text">¿Qué <strong>proyectos tecnológicos</strong> están activos o en evaluación hoy?</div>
+        <textarea class="tall" name="q33" placeholder="Migración de algo, nuevo sistema, mejora de red, integración, etc."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 34</div>
+        <div class="q-text">¿Has identificado <strong>oportunidades claras de automatización</strong> que no se han implementado?</div>
+        <textarea name="q34"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 35</div>
+        <div class="q-text">¿Qué <strong>tecnología te interesa</strong> que LP&T explore (IA, IoT en finca, RPA, otra)?</div>
+        <textarea name="q35"></textarea>
+      </div>
+    </section>
+
+    <!-- I. COORDINACIÓN -->
+    <section class="q-section" id="sec-i">
+      <div class="sec-head">
+        <div class="sec-letter">I</div>
+        <h2>Coordinación con Otras Áreas</h2>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 36</div>
+        <div class="q-text">¿Con qué áreas <strong>coordinas más</strong> y para qué?</div>
+        <textarea name="q36" placeholder="Contable, comercial, operaciones finca, gerencia."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 37</div>
+        <div class="q-text">¿Qué pide cada área de forma <strong>recurrente</strong> que cuesta entregar?</div>
+        <textarea name="q37"></textarea>
+      </div>
+    </section>
+
+    <!-- J. DOLORES -->
+    <section class="q-section" id="sec-j">
+      <div class="sec-head">
+        <div class="sec-letter">J</div>
+        <h2>Dolores Reales</h2>
+        <div class="sub">Sin filtros — sobre todo en esta sección.</div>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 38</div>
+        <div class="q-text">¿Cuál es la <strong>deuda técnica más grande</strong> que tenemos hoy?</div>
+        <textarea class="tall" name="q38"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 39</div>
+        <div class="q-text">Si pudieras <strong>quitarte 3 tareas</strong> de la semana sin que pase nada, ¿cuáles serían?</div>
+        <textarea class="tall" name="q39"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 40</div>
+        <div class="q-text">¿Qué <strong>te frustra</strong> de los sistemas actuales o de cómo te piden las cosas?</div>
+        <textarea name="q40"></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 41</div>
+        <div class="q-text">¿Qué te <strong>preocupa</strong> de meter IA / agentes autónomos en la operación de LP&T?</div>
+        <textarea class="tall" name="q41" placeholder="Esto es importante. Diseño los controles desde acá."></textarea>
+      </div>
+
+      <div class="q"><div class="q-num">PREGUNTA 42</div>
+        <div class="q-text">Si tuvieras presupuesto <strong>ilimitado por 6 meses</strong>, ¿qué cambiarías o construirías?</div>
+        <textarea class="tall" name="q42"></textarea>
+      </div>
+    </section>
+
+    <!-- ===== ARCHIVOS ===== -->
+    <section class="q-section" id="sec-files">
+      <div class="sec-head">
+        <div class="sec-letter">K</div>
+        <h2>Archivos y Hojas de Cálculo</h2>
+        <div class="sub">Lista los archivos / inventarios técnicos importantes que llevas hoy (inventario de equipos, lista de accesos, diagramas de red, registros de soporte, etc.).</div>
+      </div>
+
+      <div class="q">
+        <div class="q-num">CÓMO LLENAR</div>
+        <div class="q-text">Click en <strong>"+ Agregar archivo"</strong> y llena los datos de cada archivo. Para cada uno lo crítico: <strong>nombre, ubicación y descripción</strong>.</div>
+      </div>
+
+      <div id="filesList"></div>
+      <button type="button" class="btn-add-file" id="btnAddFile">+ Agregar archivo</button>
+    </section>
+
+    <!-- ===== COMENTARIOS GENERALES ===== -->
+    <div class="signature" style="border-left:3px solid var(--gold)">
+      <h3>Comentarios generales <span style="font-size:13px;color:var(--ink-mute);font-weight:400;font-style:italic">(opcional)</span></h3>
+      <p style="color:var(--ink-soft);font-size:14.5px;margin:-8px 0 16px">Cualquier cosa que quieras añadir y no encajó arriba. Sugerencias, ideas, dudas, contexto, lo que sea.</p>
+      <textarea name="comentarios_generales" class="tall" placeholder="Opcional, pero muy valioso."></textarea>
+    </div>
+
+    <!-- SIGNATURE -->
+    <div class="signature">
+      <h3>Firma</h3>
+      <div class="sig-grid">
+        <div><label>Nombre completo</label><input type="text" name="firma_nombre" /></div>
+        <div><label>Rol</label><input type="text" name="firma_rol" /></div>
+        <div><label>Email</label><input type="email" name="firma_email" /></div>
+        <div><label>Fecha</label><input type="text" name="firma_fecha" id="firmaFecha" /></div>
+      </div>
+    </div>
+
+    <div class="submit-bar">
+      <div class="left">
+        <h3>Listo para enviar.</h3>
+        <p>Descarga PDF o envía directo a Felipe.</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn ghost" id="btnDownload">↓ JSON</button>
+        <button type="button" class="btn ghost" id="btnPdf">⌘ PDF</button>
+        <button type="button" class="btn" id="btnSend">→ Enviar a Felipe</button>
+      </div>
+    </div>
+
+  </form>
+</main>
+
+<footer>
+  <div class="div"></div>
+  La Palma & El Tucán · Discovery Tecnología · 2026
+</footer>
+
+<div class="save-toast" id="saveToast"><span class="dot"></span>Guardado</div>
+<script src="../assets/form.js"></script>
+</body>
+</html>
