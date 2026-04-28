@@ -14,6 +14,7 @@ asistencia ejecutiva con IA.
 - **Calidades e Inventarios** — Ismelda Cubillos + Sergio
 - **Tecnología** — Jhonatan Benavides
 - **Mercadeo y Comunicación** — Elisa + Laura
+- **Administración** — Katherine Rodriguez + Daniela
 
 ## Stack
 
@@ -43,7 +44,8 @@ discovery/
 ├── cultivos-asociados/
 ├── calidades-inventarios/
 ├── tecnologia/
-└── mercadeo-comunicacion/
+├── mercadeo-comunicacion/
+└── administracion/
 ```
 
 ## Privacidad

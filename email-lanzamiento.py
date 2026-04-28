@@ -63,7 +63,7 @@ tr.font.size = Pt(14)
 tr.font.color.rgb = RGBColor(0x1F, 0x3D, 0x2B)
 title.paragraph_format.space_after = Pt(14)
 
-add_meta('Para: ', 'martica@..., katherine.monsalve@..., william.nieto@..., jeffrey@..., john.jairo@..., ismelda@..., sergio@..., jhonatan.benavides@..., elisa@..., laura@...')
+add_meta('Para: ', 'martica@..., katherine.monsalve@..., william.nieto@..., jeffrey@..., john.jairo@..., ismelda@..., sergio@..., jhonatan.benavides@..., elisa@..., laura@..., katherine.rodriguez@..., daniela@...')
 add_meta('CC: ', 'katherine.rodriguez@...')
 add_meta('Asunto: ', 'Necesito tu ayuda — 30 a 60 minutos en los próximos 5 días')
 
@@ -101,6 +101,7 @@ assignments = [
     ('Ismelda + Sergio', 'Calidades e Inventarios'),
     ('Jhonatan Benavides', 'Tecnología'),
     ('Elisa + Laura', 'Mercadeo y Comunicación'),
+    ('Katherine Rodriguez + Daniela', 'Administración'),
 ]
 
 for who, area in assignments:
